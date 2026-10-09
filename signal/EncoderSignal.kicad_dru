@@ -1,0 +1,32 @@
+(version 1)
+# Fine-pitch IC pins sit 0.20-0.25 mm apart, below the 0.3 mm Power/GND
+# net-class clearance. Allow the PCBWay standard minimum (0.15 mm) between
+# pads of the same IC only (lab rule 2.2: go below the default only where
+# the part forces it).
+(rule "fine pitch U1"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U1') && B.memberOfFootprint('U1')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U2"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U2') && B.memberOfFootprint('U2')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U3"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U3') && B.memberOfFootprint('U3')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U4"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U4') && B.memberOfFootprint('U4')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U5"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U5') && B.memberOfFootprint('U5')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U6"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U6') && B.memberOfFootprint('U6')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U7"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U7') && B.memberOfFootprint('U7')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U8"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U8') && B.memberOfFootprint('U8')")
+    (constraint clearance (min 0.15mm)))
+(rule "fine pitch U9"
+    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U9') && B.memberOfFootprint('U9')")
+    (constraint clearance (min 0.15mm)))
