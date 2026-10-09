@@ -80,7 +80,7 @@ python -I tools/fab_outputs.py                 # fab/<board>/: gerbers+drill zip
    - `ripup.py` frees a congested pin row when needed.
 5. **`track_opt.py`:**
    - Shortcuts detours with straight or 45° segments.
-   - Enters pads from the nearest side.
+   - Ends every track straight at the pad centre, so no edge-grazing ends or pour slivers.
    - Chamfers every corner of 90° or less.
    - Removes stubs and duplicates.
    - Widens Power/GND to 0.5 mm where clearance allows; nothing is narrower than 0.15 mm.
