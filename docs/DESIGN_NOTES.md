@@ -103,8 +103,8 @@ python -I tools/fab_outputs.py                 # fab/<board>/: gerbers+drill zip
 ## Library
 
 New parts (LDC5072EPWRQ1, MSPM0G3507SRHBR, TLV9062IDGKR, REF35330QDBVR, TPS70933/50DBVR, 2×6 header, 2×6 socket,
-100 pF/390 pF/470 nF caps, 4.7 Ω, 100 kΩ 0.1 %) are committed on the local branch
-`library/inductive-encoder-parts` of `PowerLabKiCadLibraries` and **not pushed**.
+100 pF/390 pF/470 nF caps, 4.7 Ω, 100 kΩ 0.1 %) are in [odtu/PowerLabKiCadLibraries#13](https://github.com/odtu/PowerLabKiCadLibraries/pull/13)
+(branch `library/inductive-encoder-parts`, not merged yet).
 The schematics and boards carry embedded copies of every symbol and footprint, so the project opens without
 them. To update parts from the library, add the PowerLabKiCadLibraries release that contains these parts.
 
